@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Navigation() {
-  const sections = ["users", "tests"];
+  const sections = ["users", "posts", "tests"];
 
   return (
     <nav className="navigation">
