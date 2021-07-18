@@ -20,10 +20,12 @@ export default function Comments({post, comments}) {
 }
 
 export async function getServerSideProps(context) {
-  const post_resp = await fetch(`http://jsonplaceholder.typicode.com/posts/${context.params.id}`)
-  const post = await post_resp.json()
-  const comments_resp = await fetch(`http://jsonplaceholder.typicode.com/posts/${context.params.id}/comments`)
-  const comments = await comments_resp.json()
+  const post = await fetch(`http://jsonplaceholder.typicode.com/posts/${context.params.id}`)
+    .then(response => response.json())
+    .catch(json => console.log(json))
+  const comments = await fetch(`http://jsonplaceholder.typicode.com/posts/${context.params.id}/comments`)
+    .then(response => response.json())
+    .catch(json => console.log(json))
 
   return {
     props: {post, comments},
