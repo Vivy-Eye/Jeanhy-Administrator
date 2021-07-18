@@ -1,10 +1,7 @@
-import { useRouter } from "next/dist/client/router";
 import MainTemplate from "../../components/MainTemplate/MainTemplate";
 import Paragraph from "../../components/Paragraph";
 
 export default function Comments({post, comments}) {
-  const router = useRouter()
-
   return (
     <MainTemplate headTitle="Post">
       <Paragraph title={post.title} text={post.body} />
