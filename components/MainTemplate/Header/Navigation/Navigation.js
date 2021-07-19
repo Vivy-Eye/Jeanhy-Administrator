@@ -1,21 +1,22 @@
 import Link from "next/link";
+import styles from "../../../../styles/Header.module.scss";
 
 export default function Navigation() {
-  const sections = ["users", "posts", "tests"];
+  const sections = ["users", "posts", "monsters"];
 
   return (
-    <nav className="navigation">
-      <ul className="menu-container">
-        <li className="menu-item">
+    <nav className={styles.navigation}>
+      <ul className={styles.menu}>
+        <li className={styles.menu__item}>
           <Link href="/">
-            <a>Home</a>
+            <a className={styles.menu__link}>Home</a>
           </Link>
         </li>
 
         {sections.map((section) => (
-          <li className="menu-item" key={sections}>
+          <li className={styles.menu__item} key={sections}>
             <Link href={"/" + section}>
-              <a>{section}</a>
+              <a className={styles.menu__link}>{section}</a>
             </Link>
           </li>
         ))}
