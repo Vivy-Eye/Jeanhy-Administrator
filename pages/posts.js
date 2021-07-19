@@ -7,17 +7,24 @@ export default function Posts({ posts }) {
     <MainTemplate headTitle="Posts">
       <Paragraph title="Posts" />
 
-      {posts.map((post) => (
-        <Paragraph key={post.id} title={post.title}>
+      {posts.map((post, i) => (
+        <Paragraph key={i} title={post.title}>
           {post.body}
           <br />
           <br />
 
           <Link href={`posts/${post.id}`}>
-            <a>- Comments -</a>
+            <a className="link">Click here - Comments -</a>
           </Link>
         </Paragraph>
       ))}
+      <style jsx>
+        {`
+          .link {
+            color: blue;
+          }
+        `}
+      </style>
     </MainTemplate>
   );
 }

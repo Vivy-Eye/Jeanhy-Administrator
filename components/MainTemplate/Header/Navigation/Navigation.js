@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "../../../../styles/Header.module.scss";
 
 export default function Navigation() {
-  const sections = ["users", "posts", "monsters"];
+  const sections = ["users", "posts", "images", "monsters"];
 
   return (
     <nav className={styles.navigation}>
@@ -13,8 +13,8 @@ export default function Navigation() {
           </Link>
         </li>
 
-        {sections.map((section) => (
-          <li className={styles.menu__item} key={sections}>
+        {sections.map((section, i) => (
+          <li className={styles.menu__item} key={i}>
             <Link href={"/" + section}>
               <a className={styles.menu__link}>{section}</a>
             </Link>
