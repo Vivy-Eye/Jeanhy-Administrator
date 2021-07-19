@@ -9,9 +9,9 @@ export default function Meta(props) {
       <link rel="icon" href="/favicon.ico" />
       <meta name="theme-color" content="slategrey" />
 
-      <link rel="shortcut icon" href="./src/icon.svg" />
-      <link rel="apple-touch-icon" href="./src/icon.svg" />
-      <link rel="mask-icon" href="./src/icon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
+      <link rel="mask-icon" href="/favicon.ico" />
 
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
