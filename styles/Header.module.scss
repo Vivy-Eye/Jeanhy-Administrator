@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   height: 4rem;
   justify-content: center;
+  
   .navigation {
     .menu {
       align-content: center;
@@ -22,7 +23,7 @@
         }
       }
       .menu__item:hover{
-        background-color: rgba(153, 205, 50, 0.5);
+        text-decoration: underline;
       }
     }
   }
