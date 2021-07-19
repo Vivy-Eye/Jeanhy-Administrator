@@ -5,7 +5,10 @@ import Paragraph from "../components/Paragraph";
 export default function Users({users}) {
   return (
     <MainTemplate headTitle="Users">
-      <Paragraph title="Users" text="Some users on my page"/>
+      <Paragraph title="Users">
+        Some users on my page
+      </Paragraph>
+      
       <ul>
         {users.map(user =>
           <li key={user.id}>
