@@ -1,0 +1,29 @@
+.header {
+  align-items: center;
+  background-color: rgb(247, 247, 120);
+  display: flex;
+  flex-wrap: wrap;
+  height: 4rem;
+  justify-content: center;
+  .navigation {
+    .menu {
+      align-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .menu__item {
+        .menu__link {
+          align-items: center;
+          display: flex;
+          height: 3rem;
+          justify-content: center;
+          text-transform: capitalize;
+          width: 6rem;
+        }
+      }
+      .menu__item:hover{
+        background-color: rgba(153, 205, 50, 0.5);
+      }
+    }
+  }
+}
