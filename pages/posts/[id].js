@@ -9,10 +9,10 @@ export default function Comments({ post, comments }) {
         <br />
         <br />
 
-        {comments.map((comment) => (
-          <Paragraph key={post.id} title={comment.name}>
-            Comment: {comment.body} <br />
-            From: {comment.email}
+        {comments.map((comment, i) => (
+          <Paragraph key={i} title={comment.name}>
+            Comment: <br />{comment.body} <br /><br />
+            From: <br />{comment.email}
           </Paragraph>
         ))}
       </Paragraph>
