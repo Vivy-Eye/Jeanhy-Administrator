@@ -14,7 +14,7 @@ export default function Paragraph({ children, title, imageUrl, subText }) {
         false
       )}
       
-      {children ? <p className={styles.body}>{children}</p> : false}
+      {children ? <div className={styles.body}>{children}</div> : false}
     </div>
   );
 }
