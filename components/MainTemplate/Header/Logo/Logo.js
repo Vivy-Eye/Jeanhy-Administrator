@@ -1,15 +1,15 @@
-// import styles from '../styles/Home.module.css'
+import styles from "../../../../styles/Header.module.scss";
 
 export default function Logo() {
   return (
-    <div className="logo-cub">
-      <div className="logo-cub__container">
-        <div className="l-cub__side l-cub__back"></div>
-        <div className="l-cub__side l-cub__left"></div>
-        <div className="l-cub__side l-cub__right"></div>
-        <div className="l-cub__side l-cub__top"></div>
-        <div className="l-cub__side l-cub__bottom"></div>
-        <div className="l-cub__side l-cub__front"></div>
+    <div className={styles.logo}>
+      <div className={styles.container}>
+        <div className={styles.side, styles.back}></div>
+        <div className={styles.side, styles.left}></div>
+        <div className={styles.side, styles.right}></div>
+        <div className={styles.side, styles.top}></div>
+        <div className={styles.side, styles.bottom}></div>
+        <div className={styles.side, styles.front}></div>
       </div>
     </div>
   )
