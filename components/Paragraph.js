@@ -1,10 +1,20 @@
-import styles from '../styles/Paragraph.module.css'
+import Image from "next/image";
+import styles from "../styles/Paragraph.module.scss";
 
-export default function Paragraph({title, text}) {
+export default function Paragraph({ children, title, imageUrl, subText }) {
   return (
     <div className={styles.paragraph}>
-      <h2 className={styles.title}>{title}</h2>
-      <p className={styles.text}>{text}</p>
+      {title ? <h2 className={styles.title}>{title}</h2> : false}
+
+      {imageUrl ? (
+        <div className={styles.image}>
+          <Image src={imageUrl} alt=" - " width={72} height={16} />
+        </div>
+      ) : (
+        false
+      )}
+      
+      {children ? <p className={styles.body}>{children}</p> : false}
     </div>
-  )
+  );
 }
