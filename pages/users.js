@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MainTemplate from "../components/MainTemplate/MainTemplate";
 import Paragraph from "../components/Paragraph";
+// import Image from '../public/vercel.svg';
 
 export default function Users({ users }) {
   return (
@@ -8,7 +9,7 @@ export default function Users({ users }) {
       <Paragraph title="Users">Some users on my page</Paragraph>
 
       {users.map((user, i) => (
-        <Paragraph key={i} title={user.name}>
+        <Paragraph key={i} title={user.name} /*imageUrl={Image}*/>
           <Link href={`users/${user.id}`}>
             <a>
               Some user {user.name} with id {user.id}
