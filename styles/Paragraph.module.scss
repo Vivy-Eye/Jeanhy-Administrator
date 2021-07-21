@@ -1,16 +1,18 @@
 .paragraph{
-  background-color: aliceblue;
-  border: 1px solid #ececec;
-  color: #222222;
+  color: #DFEBF7;
+  // border: 1px solid #ececec;
   margin: auto;
-  max-width: 60rem;
-  padding: 1.5rem 6rem;
-  h2{
-    font-family:'Times New Roman', Times, serif;
-    padding: 1rem 0;
+  max-width: 50rem;
+  padding: .5rem 0;
+
+  .title{
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem 2rem;
+    font-size: 2rem;
   }
-  p{
-    max-width: 40rem;
-    padding: 1rem 0;
+  .body{
+    padding: 2rem;
+    background-color: #031529;
   }
 }
