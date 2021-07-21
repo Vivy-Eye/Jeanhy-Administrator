@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Paragraph.module.scss";
 
-export default function Paragraph({ children, title, imageUrl, subText }) {
+export default function Paragraph({ children, title, imageUrl }) {
   return (
     <div className={styles.paragraph}>
       {title ? <h2 className={styles.title}>{title}</h2> : false}
