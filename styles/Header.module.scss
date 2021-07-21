@@ -1,6 +1,7 @@
 .header {
   align-items: center;
-  background-color: rgb(247, 247, 120);
+  background-color: #031529;
+  color: #DFEBF7;
   display: flex;
   flex-wrap: wrap;
   height: 4rem;
@@ -21,8 +22,11 @@
           text-transform: capitalize;
           width: 6rem;
         }
+        :before{
+          content: "#";
+        }
       }
-      .menu__item:hover{
+      :hover{
         text-decoration: underline;
       }
     }
