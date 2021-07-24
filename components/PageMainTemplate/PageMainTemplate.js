@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import Head from "next/head";
+import styled from "styled-components";
 import Person from "./Person/Person";
 import AppBar from "./AppBar/AppBar";
 
@@ -9,12 +9,13 @@ const Template = styled.div`
   background-color: ${(props) => props.theme.colors.turquoise};
 `;
 const Aside = styled.aside`
-  width: 30%;
+  width: 15%;
   background-color: ${(props) => props.theme.colors.ocean};
 `;
 const Main = styled.div`
   flex: 1;
   overflow: auto;
+  padding: 2rem;
 `;
 
 export default function PageMainTemplate({
