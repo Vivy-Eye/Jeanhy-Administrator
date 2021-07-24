@@ -1,10 +1,14 @@
 const theme = {
     colors: {
         black: "#222222",
-        gray:  "#999999",
-        light: "aliceblue",
+        turquoise: "#2a9d8f",
+        ocean: "#264653",
+        sun: "#e9c46a",
+        orange: "#f4a261",
+        tomato: "#f4a261",
     },
     fonts: {
+        named: '"Verdana", "sans-serif"',
         title: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif',
         menu:  '"Courier New", Courier, monospace',
     },
