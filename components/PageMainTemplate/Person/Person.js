@@ -1,16 +1,18 @@
 import styled from "styled-components";
 import Image from "next/image";
 import image from "/public/avatar.png";
+import Link from "next/link";
 
 const PersonContainer = styled.div`
-  height: 5rem;
+  height: 7rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 `;
 const PersonName = styled.div`
-  font-size: 1.2rem;
-  font-famaly: ${props => props.theme.fonts.named}
+  font-size: 1rem;
+  font-famaly: ${(props) => props.theme.fonts.named}
   color: ${(props) => props.theme.colors.sun};
 `;
 const Avatar = styled.div`
@@ -27,10 +29,12 @@ const AvatarImage = styled.div`
 export default function Person() {
   return (
     <PersonContainer>
-      <PersonName>Ilon Blaskovich</PersonName>
+      <PersonName>Klavrentiy Blaskovich</PersonName>
       <Avatar>
         <AvatarImage>
-          <Image src={image} alt="#" />
+          <Link href="/">
+            <Image src={image} alt="#" />
+          </Link>
         </AvatarImage>
       </Avatar>
     </PersonContainer>

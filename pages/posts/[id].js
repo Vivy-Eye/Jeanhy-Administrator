@@ -26,6 +26,7 @@ export async function getServerSideProps(context) {
   )
     .then((response) => response.json())
     .catch((err) => console.log(err));
+
   const comments = await fetch(
     `http://jsonplaceholder.typicode.com/posts/${context.params.id}/comments`
   )
