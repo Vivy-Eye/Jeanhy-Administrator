@@ -29,14 +29,14 @@ const Button = styled.button`
 
 const LayOut = styled.div``;
 
-const pages = ["users", "posts", "images", "monsters"];
+const pages = ["users", "posts", ];
 
 export default function AppBar() {
   return (
     <AppBarContainer>
       <AppList>
         {pages.map((page, i) => (
-          <Link href={page} key={i}>
+          <Link href={"/" + page} key={i}>
             <Button>{page}</Button>
           </Link>
         ))}
