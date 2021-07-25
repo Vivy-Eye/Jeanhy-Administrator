@@ -5,7 +5,7 @@ const Form = styled.div`
   background-color: ${(props) => props.theme.colors.ocean};
   border: solid 1px gray;
   border-radius: 1rem;
-  height: 15rem;
+  height: 15.5rem;
   padding: 1rem;
   width: 20rem;
   display: flex;
@@ -14,16 +14,19 @@ const Form = styled.div`
   align-content: flex-start;
 `;
 const Title = styled.h2`
+  text-align: center;
+  font-famaly: ${(props) => props.theme.fonts.title};
   width: 20rem;
-  color: ${(props) => props.theme.colors.orange};
-  font-family: sans-serif;
+  color: ${(props) => props.theme.colors.sun};
   font-size: 36px;
   font-weight: 600;
 `;
 const SubTitle = styled.h4`
+  text-align: center;
+  padding-bottom: 1rem;
+  font-famaly: ${(props) => props.theme.fonts.title};
   width: 20rem;
-  color: ${(props) => props.theme.colors.tomato};
-  font-family: sans-serif;
+  color: ${(props) => props.theme.colors.sun};
   font-size: 16px;
   font-weight: 600;
 `;
