@@ -2,33 +2,33 @@ import styled from "styled-components";
 import Input from "./Input/Input";
 
 const Form = styled.div`
+  align-content: flex-start;
   background-color: ${(props) => props.theme.colors.ocean};
-  border: solid 1px gray;
   border-radius: 1rem;
-  height: 15.5rem;
-  padding: 1rem;
-  width: 20rem;
+  border: solid 1px gray;
   display: flex;
   flex-wrap: wrap;
+  height: 15.5rem;
   justify-content: center;
-  align-content: flex-start;
+  padding: 1rem;
+  width: 20rem;
 `;
 const Title = styled.h2`
-  text-align: center;
-  font-famaly: ${(props) => props.theme.fonts.title};
-  width: 20rem;
   color: ${(props) => props.theme.colors.sun};
+  font-famaly: ${(props) => props.theme.fonts.title};
   font-size: 36px;
   font-weight: 600;
+  text-align: center;
+  width: 20rem;
 `;
 const SubTitle = styled.h4`
-  text-align: center;
-  padding-bottom: 1rem;
-  font-famaly: ${(props) => props.theme.fonts.title};
-  width: 20rem;
   color: ${(props) => props.theme.colors.sun};
+  font-famaly: ${(props) => props.theme.fonts.title};
   font-size: 16px;
   font-weight: 600;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 20rem;
 `;
 const Submit = styled.button`
   width: 7rem;
