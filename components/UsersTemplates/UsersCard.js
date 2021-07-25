@@ -6,25 +6,28 @@ import image from "/public/avatar.png";
 const UsersCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
   justify-content: space-between;
+  align-items: center;
 `;
 const UserCard = styled.div`
-justify-content: space-evenly;
-  align-items: center;
-display: flex;
-height: 5rem;
-width: 10rem;
-  color: ${(props) => props.theme.colors.postBlack};
-  border-radius: 1rem;
-  background-color: ${(props) => props.theme.colors.ocean};
-`;
-const Title = styled.p`
+  width: 49%;
   padding: 1rem;
-  color: ${(props) => props.theme.colors.underRed};
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  // border: solid 1px ${props => props.theme.colors.orange}
+  color: ${props => props.theme.colors.ocean}
 `;
-const Avatar = styled.div`height: 5rem;
-width: 5rem;`;
+const Title = styled.h2`
+  padding: 1rem;
+`;
+const Avatar = styled.div`
+  height: 5rem;
+  width: 5rem;
+`;
 
 export default function UsersCard({ users }) {
   return (
@@ -32,7 +35,7 @@ export default function UsersCard({ users }) {
       {users.map((user, i) => (
         <UserCard key={i}>
           <Title>
-            {user.name} : {user.id}
+            {user.id} : {user.name}
           </Title>
           <Avatar>
             <Link href={`users/${user.id}`}>
