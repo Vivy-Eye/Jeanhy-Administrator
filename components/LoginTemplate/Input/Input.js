@@ -16,7 +16,7 @@ const Placeholder = styled.span`
   display: flex;
   justify-content: center;
   width: 7rem;
-  color: ${(props) => props.theme.colors.sun};
+  color: ${(props) => props.theme.colors.turquoise};
 `;
 const Inp = styled.input`
   width: 100%;
@@ -26,7 +26,7 @@ const Inp = styled.input`
   font-size: 1.2rem;
   border-radius: 1rem;
   background-color: ${(props) => props.theme.colors.turquoise};
-  color: ${(props) => props.theme.colors.underRed};
+  color: ${(props) => props.theme.colors.ocean};
 `;
 
 export default function Input({ placeholder }) {
