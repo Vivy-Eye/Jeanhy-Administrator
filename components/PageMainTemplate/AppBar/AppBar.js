@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import Image from "next/image";
-import image from "/public/vercel.svg";
 
 const AppBarContainer = styled.div``;
 
@@ -43,9 +41,9 @@ export default function AppBar() {
           </Link>
         ))}
       </AppList>
-      <LayOut>
+      {/* <LayOut>
         <Link href="/">LayOut</Link>
-      </LayOut>
+      </LayOut> */}
     </AppBarContainer>
   );
 }
