@@ -10,12 +10,13 @@ const PersonContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
-const PersonName = styled.div`
+const PersonName = styled.h2`
   font-size: 1rem;
-  font-famaly: ${(props) => props.theme.fonts.named}
+  font-famaly: ${(props) => props.theme.fonts.title};
   color: ${(props) => props.theme.colors.sun};
 `;
 const Avatar = styled.div`
+  background-color: ${(props) => props.theme.colors.orange}
   border-radius: 50%;
   height: 64px;
   width: 64px;
@@ -33,7 +34,7 @@ export default function Person() {
       <Avatar>
         <AvatarImage>
           <Link href="/">
-            <Image src={image} alt="#" />
+            <Image src={image} alt="^.^" />
           </Link>
         </AvatarImage>
       </Avatar>
