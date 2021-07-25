@@ -12,15 +12,15 @@ const PostCard = styled.div`
   padding: 1rem;
 `;
 const Title = styled.h2`
-  padding: 1rem;
-  font-famaly: ${(props) => props.theme.fonts.title};
   color: ${(props) => props.theme.colors.ocean};
+  font-famaly: ${(props) => props.theme.fonts.title};
+  padding: 1rem;
 `;
 const Body = styled.div`
   background-color: ${(props) => props.theme.colors.ocean};
   border-radius: 1rem;
-  padding: 1rem;
   color: ${(props) => props.theme.colors.postBlack};
+  padding: 1rem;
 `;
 const Comments = styled.div`
   color: ${(props) => props.theme.colors.orange};
