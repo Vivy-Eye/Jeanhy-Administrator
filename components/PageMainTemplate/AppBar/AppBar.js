@@ -1,35 +1,32 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const AppBarContainer = styled.div``;
+const pages = ["users", "posts", ];
 
+const AppBarContainer = styled.div``;
 const AppList = styled.div`
-  height: 12rem;
+  align-content: space-between;
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: calc(3rem * ${pages.length});
   justify-content: center;
-  align-content: space-between;
 `;
-
 const Button = styled.button`
   align-items: center;
+  background-color: ${(props) => props.theme.colors.turquoise};
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
   font-size: 1.2rem;
-  text-transform: capitalize;
   height: 2.5rem;
+  justify-content: center;
+  text-transform: capitalize;
   width: 10rem;
-  border-radius: 5px;
-  background-color: ${(props) => props.theme.colors.turquoise};
 `;
 
 const LayOut = styled.div``;
-
-const pages = ["users", "posts", ];
 
 export default function AppBar() {
   return (
