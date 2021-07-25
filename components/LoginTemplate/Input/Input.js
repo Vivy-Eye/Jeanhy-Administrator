@@ -1,32 +1,30 @@
 import styled from "styled-components";
 
 const InputContainer = styled.div`
-  width: 20rem;
   padding: 1rem 0;
+  width: 20rem;
 `;
 const Label = styled.label`
   width: 100%;
 `;
 const Placeholder = styled.span`
-  position: absolute;
-  margin: -1rem calc(11rem / 2);
   background-color: ${(props) => props.theme.colors.ocean};
-  // opacity: .8;
   border-radius: 1rem;
+  color: ${(props) => props.theme.colors.turquoise};
   display: flex;
   justify-content: center;
+  margin: -1rem calc(11rem / 2);
+  position: absolute;
   width: 7rem;
-  color: ${(props) => props.theme.colors.turquoise};
 `;
 const Inp = styled.input`
-  width: 100%;
-  // background-color: #00000000;
+  background-color: ${(props) => props.theme.colors.turquoise};
+  border-radius: 1rem;
+  color: ${(props) => props.theme.colors.ocean};
+  font-size: 1.2rem;
   padding: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
-  border-radius: 1rem;
-  background-color: ${(props) => props.theme.colors.turquoise};
-  color: ${(props) => props.theme.colors.ocean};
+  width: 100%;
 `;
 
 export default function Input({ placeholder }) {
