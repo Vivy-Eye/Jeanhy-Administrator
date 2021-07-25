@@ -5,7 +5,7 @@ const theme = {
         ocean: "#264653",
         sun: "#e9c46a",
         orange: "#f4a261",
-        tomato: "#f4a261",
+        tomato: "#e76f51",
         postBlack: "#e8e8e8",
         underRed: "#483535",
     },
