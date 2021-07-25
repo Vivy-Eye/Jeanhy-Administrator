@@ -13,7 +13,8 @@ const PostCard = styled.div`
 `;
 const Title = styled.h2`
   padding: 1rem;
-  color: ${(props) => props.theme.colors.underRed};
+  font-famaly: ${(props) => props.theme.fonts.title};
+  color: ${(props) => props.theme.colors.ocean};
 `;
 const Body = styled.div`
   background-color: ${(props) => props.theme.colors.ocean};
@@ -22,7 +23,7 @@ const Body = styled.div`
   color: ${(props) => props.theme.colors.postBlack};
 `;
 const Comments = styled.div`
-color: ${(props) => props.theme.colors.orange};
+  color: ${(props) => props.theme.colors.orange};
 `;
 
 export default function PostsCard({ posts }) {
@@ -31,12 +32,13 @@ export default function PostsCard({ posts }) {
       {posts.map((post, i) => (
         <PostCard key={i}>
           <Title>{post.title}</Title>
-          <Body>{post.body}
-          <Comments>
-            <Link href={`posts/${post.id}`}>
-              <a>View Comments</a>
-            </Link>
-          </Comments>
+          <Body>
+            {post.body}
+            <Comments>
+              <Link href={`posts/${post.id}`}>
+                <a>View Comments</a>
+              </Link>
+            </Comments>
           </Body>
         </PostCard>
       ))}
