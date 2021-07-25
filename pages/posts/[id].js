@@ -1,22 +1,11 @@
-import MainTemplate from "../../components/MainTemplate/MainTemplate";
-import Paragraph from "../../components/Paragraph";
+import PageMainTemplate from "../../components/PageMainTemplate/PageMainTemplate"
+import PostWithComments from "../../components/PostsTemplates/PostWithComments"
 
 export default function Comments({ post, comments }) {
   return (
-    <MainTemplate headTitle="Post">
-      <Paragraph title={post.title}>
-        {post.body}
-        <br />
-        <br />
-
-        {comments.map((comment, i) => (
-          <Paragraph key={i} title={comment.name}>
-            Comment: <br />{comment.body} <br /><br />
-            From: <br />{comment.email}
-          </Paragraph>
-        ))}
-      </Paragraph>
-    </MainTemplate>
+    <PageMainTemplate title="Posts">
+      <PostWithComments post={post} comments={comments}/>
+    </PageMainTemplate>
   );
 }
 
