@@ -10,20 +10,20 @@ const Media = styled.div`
   width: 200px;
 `;
 const Title = styled.h2`
-  padding: 1rem;
-  font-famaly: ${(props) => props.theme.fonts.title};
   color: ${(props) => props.theme.colors.underRed};
+  font-famaly: ${(props) => props.theme.fonts.title};
+  padding: 1rem;
 `;
 const Body = styled.div`
   background-color: ${(props) => props.theme.colors.ocean};
   border-radius: 1rem;
-  padding: 1rem;
   color: ${(props) => props.theme.colors.postBlack};
+  padding: 1rem;
 `;
 const Comments = styled.div`
   flex: 1;
-  overflow: auto;
   height: calc(100vh - 4rem);
+  overflow: auto;
 `;
 const Comment = styled.div`
   padding: 1rem;
