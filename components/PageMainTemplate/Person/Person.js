@@ -4,27 +4,26 @@ import image from "/public/avatar.png";
 import Link from "next/link";
 
 const PersonContainer = styled.div`
-  height: 7rem;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  display: flex;
+  height: 7rem;
+  justify-content: space-evenly;
+  padding: 0 1rem;
 `;
 const PersonName = styled.h2`
-  font-size: 1rem;
-  font-famaly: ${(props) => props.theme.fonts.title};
   color: ${(props) => props.theme.colors.sun};
+  font-famaly: ${(props) => props.theme.fonts.title};
+  font-size: 1rem;
 `;
 const Avatar = styled.div`
-  background-color: ${(props) => props.theme.colors.orange}
+  background-color: ${(props) => props.theme.colors.orange};
   border-radius: 50%;
-  height: 64px;
-  width: 64px;
-`;
-const AvatarImage = styled.div`
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  height: ${(props) => props.theme.sizes.icon};
+  width: calc(${(props) => props.theme.sizes.icon} + 25px);
+  img {
+    height: ${(props) => props.theme.sizes.icon};
+    width: calc(${(props) => props.theme.sizes.icon} + 25px);
+  }
 `;
 
 export default function Person() {
@@ -32,11 +31,9 @@ export default function Person() {
     <PersonContainer>
       <PersonName>Klavrentiy Blaskovich</PersonName>
       <Avatar>
-        <AvatarImage>
-          <Link href="/">
-            <Image src={image} alt="^.^" />
-          </Link>
-        </AvatarImage>
+        <Link href="/">
+          <Image src={image} alt="^.^" />
+        </Link>
       </Avatar>
     </PersonContainer>
   );
