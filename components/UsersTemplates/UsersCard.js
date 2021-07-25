@@ -4,22 +4,21 @@ import Image from "next/image";
 import image from "/public/avatar.png";
 
 const UsersCardContainer = styled.div`
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 `;
 const UserCard = styled.div`
-  width: 49%;
-  padding: 1rem;
+  align-items: center;
+  border-radius: 1rem;
+  color: ${props => props.theme.colors.ocean}
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 1rem;
-  border-radius: 1rem;
-  // border: solid 1px ${props => props.theme.colors.orange}
-  color: ${props => props.theme.colors.ocean}
+  padding: 1rem;
+  width: 49%;
 `;
 const Title = styled.h2`
   padding: 1rem;
