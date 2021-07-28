@@ -1,31 +1,11 @@
-import Link from "next/link";
-import MainTemplate from "../components/MainTemplate/MainTemplate";
-import Paragraph from "../components/Paragraph";
+import PageMainTemplate from "../components/PageMainTemplate/PageMainTemplate";
+import PostsCard from "../components/PostsTemplates/PostsCard";
 
 export default function Posts({ posts }) {
   return (
-    <MainTemplate headTitle="Posts">
-      <Paragraph title="Posts" />
-
-      {posts.map((post, i) => (
-        <Paragraph key={i} title={post.title}>
-          {post.body}
-          <br />
-          <br />
-
-          <Link href={`posts/${post.id}`}>
-            <a className="link">Click here - Comments -</a>
-          </Link>
-        </Paragraph>
-      ))}
-      <style jsx>
-        {`
-          .link {
-            color: blue;
-          }
-        `}
-      </style>
-    </MainTemplate>
+    <PageMainTemplate title="Posts">
+      <PostsCard posts={posts}/>
+    </PageMainTemplate>
   );
 }
 

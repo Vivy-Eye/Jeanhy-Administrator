@@ -1,23 +1,11 @@
-import Link from "next/link";
-import MainTemplate from "../components/MainTemplate/MainTemplate";
-import Paragraph from "../components/Paragraph";
-// import Image from '../public/vercel.svg';
+import PageMainTemplate from "../components/PageMainTemplate/PageMainTemplate";
+import UsersCard from "../components/UsersTemplates/UsersCard";
 
 export default function Users({ users }) {
   return (
-    <MainTemplate headTitle="Users">
-      <Paragraph title="Users">Some users on my page</Paragraph>
-
-      {users.map((user, i) => (
-        <Paragraph key={i} title={user.name} /*imageUrl={Image}*/>
-          <Link href={`users/${user.id}`}>
-            <a>
-              Some user {user.name} with id {user.id}
-            </a>
-          </Link>
-        </Paragraph>
-      ))}
-    </MainTemplate>
+    <PageMainTemplate title="Users">
+      <UsersCard users={users} />
+    </PageMainTemplate>
   );
 }
 
